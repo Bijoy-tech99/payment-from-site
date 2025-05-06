@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment from</title>
+</head>
+<body>
+   <fron action="from_action.asp" method="get">
+   <h1 style="color:tomato"><p> payment froms </p></h1>
+   <h2>contact information</h2>
+   <p>Name*: <input type="text" name="name" required></p>
+   <fieldset>
+    <legend>gender</legend>
+    <p><input type="radio" name="gender" id="male">male
+        <input type="radio" name="gender" id="Female">Female
+        </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="50" roe="7">
+        </textarea></p>
+        <p>Email: <input type="email" name="email" id="email"> </p>
+        <p>Pincode: <input type="password" name="Pincode" id="pincode"></p>
+        <h2>Payment Information</h2>
+        <p>Card type:
+            <select name="card_type" id="card_type">
+                <option value="">--Select a card type--</option>
+                <option value="visa">visa</option>
+                <option value="Upay">Upay</option>
+                <option value="google pay">Google pay</option>
+                </select>
+                </p>
+                <p>
+                    Card number: <input type="number" name="card_number" id="card_number">
+                    </p>
+                    <p>
+                        Expiration Date: <input type="date" name="exp_date" id="exp_date">
+                        </p>
+                        <p>CVV:<input type="password" name="cvv" id="cvv"></p>
+                        <input type="submit" value="Pay Now">
+
+   </fron>
+
+    
+</body>
+</html>
